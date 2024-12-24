@@ -16,7 +16,7 @@ const LoginSignupForm = ({ type, closeModal, setUser }) => {
       console.log('Logging in with:', email, password);
 
       try {
-        const response = await fetch('http://localhost:5000/api/auth/login', {
+        const response = await fetch('https://backend-render-com.onrender.com/api/auth/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const LoginSignupForm = ({ type, closeModal, setUser }) => {
       console.log('Signing up with:', name, email, password);
 
       try {
-        const response = await fetch('http://localhost:5000/api/auth/signup', {
+        const response = await fetch('https://backend-render-com.onrender.com/api/auth/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
