@@ -5,7 +5,7 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const { errorHandler } = require('./Middleware/errorMiddleware');
-const lienheRoutes = require('./routes/lienheRoutes'); // Import lienheRoutes
+const lienheRoutes = require('./routes/lienheRoutes'); // Import 
 
 dotenv.config();
 
@@ -15,6 +15,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:3000',  // Local development
   'https://react-render-com.onrender.com', // Frontend trên Render
+  'https://backend-render-com.onrender.com', // Backend trên Render
 ];
 
 app.use(cors({
