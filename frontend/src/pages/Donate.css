@@ -1,0 +1,182 @@
+/* Container và kiểu dáng cơ bản */
+.support-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #eee8fe;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .support-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50; /* Màu chữ đậm */
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #5e5ce6, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .support-description {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Phần QR Code */
+  .qr-code {
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  
+  .qr-thumbnail {
+    max-width: 200px;
+    height: auto;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .qr-thumbnail:hover {
+    transform: scale(1.1); /* Làm ảnh QR to lên một chút khi hover */
+  }
+  
+  .donate-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #5e5ce6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .donate-btn:hover {
+    background-color: #4b4ad4;
+    transform:  scale(1.2);
+  }
+  
+  
+  /* Modal (hộp thoại hiện ảnh lớn) */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-description {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .close-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #eee8fe; /* Màu nền cho nút đóng */
+    color: white; /* Màu chữ trắng */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #d1c1f9; /* Màu nền khi hover */
+  }
+  
+  .close-btn:focus {
+    outline: none; /* Loại bỏ viền khi nhấn */
+  }
+
+  .thank-you-message{
+    color: #2ad15f;
+  }
+
+  .thanks{
+    color: #2ad15f
+  }
+
+  /* Success Banner */
+.success-banner {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.4s ease-out, fadeOut 0.6s ease-in 2.4s;
+  z-index: 1000;
+}
+
+.success-banner i {
+  font-size: 24px;
+  color: white;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

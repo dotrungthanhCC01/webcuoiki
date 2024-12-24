@@ -1,0 +1,42 @@
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background-color: rgb(168, 166, 246);
+    border-radius: 50%;
+    animation: snow linear infinite;
+    pointer-events: none; /* Không ảnh hưởng đến tương tác */
+}
+
+@keyframes snow {
+    0% {
+        transform: translateX(0) translateY(-10px);
+    }
+    50% {
+        transform: translateX(20px) translateY(50vh); /* Lượn nhẹ qua phải */
+    }
+    100% {
+        transform: translateX(-30px) translateY(100vh); /* Lượn nhẹ qua trái */
+    }
+}
+
+
+.snowflake-1 {
+    width: 8px;
+    height: 8px;
+}
+
+.snowflake-2 {
+    width: 12px;
+    height: 12px;
+}
+
+.snowflake-3 {
+    width: 15px;
+    height: 15px;
+}
+
+.snowflake-4 {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}

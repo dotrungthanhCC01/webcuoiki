@@ -1,0 +1,215 @@
+.create-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #eee8fe;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-card-title{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50; /* Màu chữ đậm */
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #5e5ce6, #2c3e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.cover-preview, .page-preview {
+  border: 2px solid #ccc;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cover-preview:hover, .page-preview:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.preview-container {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px; 
+  position: relative;
+  perspective: 1000px; 
+}
+
+.card-cover, .card-page {
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.card-cover {
+  transform: rotateY(10deg);
+}
+
+.card-page {
+  transform: rotateY(-10deg);
+  display: flex;
+  justify-content: center;  /* Căn giữa theo chiều ngang */
+  align-items: center;      /* Căn giữa theo chiều dọc */
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: normal;
+  font-style: normal;
+  height: 100%;
+  text-align: center;       /* Căn giữa văn bản theo chiều ngang */
+}
+
+.card-container:hover .card-cover {
+  transform: rotateY(20deg);
+}
+
+.card-container:hover .card-page {
+  transform: rotateY(-20deg);
+}
+
+.bold-italic-toggle label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.bold-italic-toggle input {
+  margin-right: 8px;
+}
+
+.preview-buttons {
+  margin-top: 20px;
+}
+
+.preview-buttons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin-top: 20px;
+  background-color: #2ecc71;
+  border-radius: 8px;
+}
+
+.preview-buttons button:hover {
+  background-color: #27ae60;
+}
+
+@media (max-width: 768px) {
+  .create-card {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card-cover, .card-page {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .preview-buttons button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-card {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .cover-preview, .page-preview {
+    width: 100%;
+    height: 200px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}

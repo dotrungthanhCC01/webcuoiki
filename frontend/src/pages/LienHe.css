@@ -1,0 +1,111 @@
+.contact-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #eee8fe; /* Nền nhẹ nhàng */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng mờ */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50; /* Màu chữ đậm */
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #5e5ce6, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-success {
+    font-size: 1.2rem;
+    color: #2ecc71; /* Màu xanh lá thành công */
+    text-align: center;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #5e5ce6;
+  }
+  
+  .contact-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #5e5ce6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #4b4ad4;
+    transform: scale(1.2)
+  }
+  
+  .success-banner {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px 0 0 4px;
+    animation: slideIn 0.5s ease-out, slideOut 0.5s ease-in 2.5s;
+    z-index: 1000;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  

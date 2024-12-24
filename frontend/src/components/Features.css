@@ -1,0 +1,21 @@
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 258px;
+    background-color: white;
+  }
+  
+  .feature-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature-item h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  

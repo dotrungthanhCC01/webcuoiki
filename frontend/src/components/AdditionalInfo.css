@@ -1,0 +1,136 @@
+/* Thiết kế phần giao diện chính */
+.additional-info-section {
+  margin-top: 30px;
+  padding: 40px 50px;
+  background-color: #f9f9f9; /* Màu nền sáng và nhẹ */
+  border-radius: 15px; /* Bo góc mạnh hơn */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Bóng đổ đậm */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Phần thông tin chung */
+.info-item {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-5px); /* Thêm hiệu ứng di chuyển khi hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Tăng độ đậm bóng khi hover */
+}
+
+.info-item h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700; /* Đậm hơn cho tiêu đề */
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.info-item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Phần câu hỏi thường gặp */
+.faq-section {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Màu nền thay đổi khi hover */
+}
+
+.faq-item h4 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item h4:hover {
+  color: #5e5ce6; /* Màu chữ khi hover */
+}
+
+
+.faq-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.faq-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.faq-item ul li {
+  list-style-type: disc;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  color: #007bff; /* Thay đổi màu chữ khi hover */
+}
+
+.arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg); /* Đảo chiều mũi tên khi câu hỏi mở */
+}
+
+/* Thiết kế cho các phần responsive */
+@media (max-width: 768px) {
+  .additional-info-section {
+    padding: 20px;
+  }
+
+  .info-item {
+    padding: 15px;
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+
+  .faq-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .info-item h3 {
+    font-size: 1.4rem;
+  }
+}

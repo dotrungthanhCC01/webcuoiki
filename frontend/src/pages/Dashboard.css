@@ -1,0 +1,91 @@
+.dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0; /* Loại bỏ margin mặc định */
+  width: 100%; /* Đảm bảo chiều rộng bao phủ toàn bộ màn hình */
+  background-color: #eee8fe; /* Màu nền */
+  box-sizing: border-box; /* Tính padding bên trong kích thước phần tử */
+}
+
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5em;
+  color: #5e5ce6;
+}
+
+.dashboard-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #5e5ce6;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #5e5ce6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1a5bb8;
+}
+
+.dashboard-news {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-news h2 {
+  margin-bottom: 10px;
+}
+
+.dashboard-news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-news li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.dashboard-footer {
+  text-align: center;
+  color: #888;
+}

@@ -1,0 +1,142 @@
+/* CSS cho header */
+.header {
+  background-color: #ffffff; /* Màu nền trắng */
+  padding: 15px 30px; /* Khoảng cách ở các cạnh */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 96%; /* Chiều rộng bằng màn hình */
+}
+
+/* Chỉnh nội dung trong header */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Phân chia logo, menu, và nút */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Giới hạn chiều rộng header */
+  margin: 0 auto;
+}
+
+/* Logo căn sát bên trái */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5e5ce6; /* Màu tím giống logo Canva */
+  letter-spacing: 2px;
+  margin-right: auto; /* Đẩy menu và các nút ra xa */
+}
+
+/* Menu căn giữa */
+nav {
+  flex: 1; /* Lấy không gian giữa logo và các nút */
+  display: flex;
+  justify-content: center; /* Căn giữa menu */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0; /* Loại bỏ margin của ul */
+  padding: 0; /* Loại bỏ padding của ul */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Màu chữ đen */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5e5ce6; /* Chuyển màu chữ khi hover */
+}
+
+/* Các nút căn sát bên phải */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Đẩy sát góc phải màn hình */
+}
+
+/* Hiển thị thông tin người dùng */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Khoảng cách giữa avatar và các nút */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px; /* Giới hạn chiều rộng */
+  overflow: hidden; /* Ẩn phần thừa nếu có */
+  text-overflow: ellipsis; /* Thêm dấu "..." khi văn bản dài */
+  white-space: nowrap; /* Không cho văn bản xuống dòng */
+}
+
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Nút Đăng nhập, Đăng ký */
+.auth-buttons .btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #5e5ce6;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #4d4be5;
+}
+
+.signup-btn {
+  background-color: #7e7fff;
+}
+
+.signup-btn:hover {
+  background-color: #6a6fe6;
+}
+
+/* Responsive design cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none; /* Ẩn menu trên màn hình nhỏ */
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+}
